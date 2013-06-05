@@ -9,4 +9,5 @@ sources/javascript/build
 resources/.DS_Store
 deploy.yml
 stage.yml
+ftp-push
 
