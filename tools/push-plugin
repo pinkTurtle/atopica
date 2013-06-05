@@ -1,0 +1,27 @@
+#!/bin/bash
+ftp -inv 67.222.18.91 <<FINFTP
+user wpchange 2013plugin
+binary
+
+cd public_html/wp-content/plugins/wp-change/
+lcd ./public_html/wp-content/plugins/wp-change/
+mput *
+
+cd core
+lcd core
+mput *
+
+cd ../inc
+lcd ../inc
+mput *
+
+cd ../public
+lcd ../public
+mput *
+
+cd ../tpls
+lcd ../tpls
+mput *
+
+bye
+FINFTP

@@ -1,0 +1,10 @@
+{
+  "name": "sbr-program",
+  "version": "1.0.0",
+  "description": "Summit program page and child pages",
+  "dependencies": {},
+  "devDependencies": {
+    "nib": "*"
+  },
+  "main": "program"
+}

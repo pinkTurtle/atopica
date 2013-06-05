@@ -1,0 +1,13 @@
+#!/bin/bash
+ftp -inv 67.222.18.91 <<FINFTP
+user wpchange 2013plugin
+binary
+cd public_html
+mkdir .dbt
+cd .dbt
+lcd tools
+put bigdump.php
+lcd ../data
+put production.sql
+bye
+FINFTP

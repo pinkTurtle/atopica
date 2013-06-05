@@ -1,0 +1,10 @@
+#!/bin/bash
+
+ftp -inv xifox.net <<FINFTP
+user wp-change alfil10asesino
+binary
+cd wp-content/plugins/wp-change/public
+lcd wpc/public/
+put wp-change.css
+bye
+FINFTP

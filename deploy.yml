@@ -1,0 +1,11 @@
+'settings':
+  ignore_if_same_revision: true
+'/':
+  skip: false
+  scheme: ftp
+  user: {place-user}
+  password: {'place-password'} #leave colons "'"
+  host: {place-host}
+  port: 21
+  path: /
+  local_path: public_html/

@@ -1,0 +1,9 @@
+#!/bin/bash
+ftp -inv 67.222.18.91 <<FINFTP
+user weldnew S&0.Mz181;#g
+binary
+cd public_html
+cd .dbt
+mdelete *.*
+bye
+FINFTP
