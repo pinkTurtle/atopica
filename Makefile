@@ -32,7 +32,5 @@ stage-deploy:
 ##	tools/push-compiled
 
 deploy:
-	git push origin master
-	make ftp-push
-
+	git deploy
 .PHONY: install  html all css clean-js

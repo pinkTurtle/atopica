@@ -3,9 +3,9 @@
 '/':
   skip: false
   scheme: ftp
-  user: {place-user}
-  password: {'place-password'} #leave colons "'"
-  host: {place-host}
+  user: atopica
+  password: 'alfil10asesino'
+  host: xifox.net
   port: 21
   path: /
-  local_path: public_html/
+  local_path: website/
