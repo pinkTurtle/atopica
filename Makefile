@@ -29,7 +29,15 @@ ftp-push:
 
 stage-deploy:
 	git deploy stage
-##	tools/push-compiled
+
+db-dump:
+	mysqldump -u root -palfilasesino --opt atopica > data/dump.sql
+
+db-update:
+	sed 's/localhost\/atopica/atopica.xifox.net/g' data/dump.sql > data/production.sql
+
+db-local-update:
+	sed 's/atopica.xifox.net/localhost\/atopica/g' data/xifox_atopica.sql > data/local.sql
 
 deploy:
 	git deploy
