@@ -7,3 +7,6 @@ sources/javascript/components
 sources/javascript/build
 .DS_Store
 resources/.DS_Store
+deploy.yml
+stage.yml
+
